@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "SortingApp"
+  "defaultProject": "SortingApp",
+  "cli": {
+    "analytics": "bf87a5b3-4cda-4142-ae82-d67924da7e09"
+  }
 }
