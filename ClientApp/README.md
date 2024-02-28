@@ -5,6 +5,8 @@ Display algorithm: You can create a new component in Angular. This can call the 
 Routing: 
 Remember that this works with both the ASP.NET Core backend and the Angular frontend development.
 
+Algorithms: bubblesort, heapsort, mergesort, quicksort
+
 # SortingApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
