@@ -7,6 +7,8 @@ Remember that this works with both the ASP.NET Core backend and the Angular fron
 
 Algorithms: bubblesort, heapsort, mergesort, quicksort
 
+Process: need to run npm install before ng serve in the ClientApp folder
+
 # SortingApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
