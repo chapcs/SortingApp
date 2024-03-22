@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BubblesortService } from 'algorithm/bubblesort.service';
 
 @Component({
   selector: 'app-bubblesort',
@@ -6,19 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bubblesort.component.css']
 })
 export class BubblesortComponent implements OnInit {
+  unsortedArray: number[] = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+  sortedArray: number[] = []; //empty array
 
-  constructor(private bubbleSortService: BubbleSortService) { }
+  constructor(private bubbleSortService: BubblesortService) { }
 
-ngOnInit() {
-  this.bubbleSortService.dispatchArray.subscribe(array => {
-    console.log(array);
-  });
-
-  this.bubbleSortService.bubbleSort([5, 3, 8, 4, 2]);
-}
-
-ngOnDestroy() {
-  this.bubbleSortService.dispatchArray.unsubscribe();
-}
-
+  ngOnInit(): void {
+    this.sortedArray = this.bubbleSortService.bubbleSort([...this.unsortedArray]);
+  }
 }
